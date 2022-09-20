@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    position: relative;
+    /* overflow-x: hidden; */
+    /* outline: hidden; */
+    background-color: black;
+}
+nav{
+    background-color: black;
+    display: flex;
+    margin: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 3.5rem;
+    width: 98%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+
+} 
+#close{
+    z-index: 1000;
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -120%;
+    z-index: 10;
+    background-color: black;
+    backdrop-filter: blur(5px);
+    transition: all 1s ease-in-out;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 1rem;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(min-width: 990px) {
+    nav ul{
+        flex-direction: row;
+        position: inherit;
+        height: unset;
+        background-color: unset;
+        backdrop-filter: unset;
+        top: unset;
+        left: unset;
+        width: unset;
+        transition: none;
+       
+    }
+    #close, #open{
+        display: none;
+    
+    }
+    #body{
+        display: flex;
+    }
+    .textBody{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+  
+    }
+
+    
+}
+@media (min-width: 750px) and (max-width: 989px){ 
+    nav ul{
+        flex-direction: row;
+        position: inherit;
+        height: unset;
+        background-color: unset;
+        backdrop-filter: unset;
+        top: unset;
+        left: unset;
+        width: unset;
+        transition: none;
+       
+    }
+    #close, #open{
+        display: none;
+    
+    }
+ }
+
+
+
+
+/* My Styles */
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
+body{
+    background-color: black
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+}
+nav label{
+    border: 2px solid white;
+    padding: 10px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    margin-left: 30px;
+    list-style-type: none;
+}
+
+.textBody{
+    margin: 0.5rem 0;
+    width: 70%;
+    line-height: 1.5rem;
+
+}
+.textBody h1{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.textBody p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+}
+.imgBody{
+    margin: 0.5rem 0.5rem;
+    width: 100%;
+    height: 70vh;
+    background-image: url(img/photo1.png);
+    background-position: center;
+    background-size: contain;
+    
+}
+.imgBody .proContainer {
+    position: relative;
+    top: 80%;
+    left: 65%;
+    transform: translateX(-50%) ;
+    width: fit-content;
+    padding: 0.5rem 0.5rem;
+    min-width: 340px;
+    background-color: black;
+    box-shadow: 2px 2px 3px rgb(193, 193, 193);
+}
+.profile{
+    display: flex;
+    padding: 15px 30px;
+}
+.profile img{
+    width: 50px;
+    border-radius: 50%;
+}
